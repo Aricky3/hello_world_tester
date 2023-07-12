@@ -15,6 +15,17 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
+        Button(action: {
+            // Action to perform when the button is tapped
+            // You can add your custom logic here
+        }) {
+            Text("Home")
+                .foregroundColor(.white)
+                .padding(.horizontal, 80) // Increase the horizontal padding
+                .padding(.vertical, 10) // Increase the vertical padding
+                .background(Color.blue)
+                .cornerRadius(8)
+        }
         .padding()
     }
 }
